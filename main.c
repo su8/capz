@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  for (; x < argc; x++) {
+  for (; x < argc; x++, z = 0) {
     for (str = argv[x]; *str; str++) {
       if (0 == z) {
         putchar((toupper((unsigned char) *str)));
@@ -43,7 +43,6 @@ int main(int argc, char *argv[]) {
     if ((x + 1) < argc) {
       putchar(' ');
     }
-    z = 0;
   }
   putchar('\n');
 
