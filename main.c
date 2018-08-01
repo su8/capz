@@ -38,6 +38,7 @@ int main(int argc, char *argv[]) {
         continue;
       }
       putchar(*str);
+      if (' ' == *str) z = 0;
     }
     if ((x + 1) < argc) {
       putchar(' ');
